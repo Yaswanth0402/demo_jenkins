@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        PATH = "C:\Users\sanikommu.yaswanth.TL592\AppData\Local\Programs\Python\Python312;C:\Users\sanikommu.yaswanth.TL592\AppData\Local\Programs\Python\Python312\Scripts;${env.PATH}"
+    }
 
     stages {
         stage('Clone Repository') {
