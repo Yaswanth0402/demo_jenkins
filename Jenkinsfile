@@ -10,7 +10,7 @@ pipeline {
  
         stage('Install Dependencies') {
             steps {
-                sh '''
+                bat '''
                     pip install pytest
                 '''
             }
@@ -18,7 +18,7 @@ pipeline {
  
         stage('Run Tests') {
             steps {
-                sh 'pytest test_main.py'
+                bat 'pytest test_main.py'
             }
         }
     }
